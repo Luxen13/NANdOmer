@@ -1,0 +1,48 @@
+# pixi environments and others 
+.pixi/*
+!.pixi/config.toml
+.vscode/
+.DS_Store
+.pytest_cache/
+__pycache__/
+
+#dirs
+test/
+data/
+results/
+scripts/
+
+pytest.ini
+
+# packaging artifacts
+*.egg-info/
+build/
+dist/
+
+# common CLI output directories
+out/
+out_*/
+
+# transient alignment intermediates
+*.unsorted.bam
+
+# secrets and local credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.der
+.aws/
+.kube/
+.netrc
+.pypirc
+.npmrc
+
+# local virtual envs
+.venv/
+venv/
+env/

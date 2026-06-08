@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nandomer"
+version = "0.1.0"
+description = "Randomer-focused alignment and calling toolkit for nanopore reads"
+requires-python = ">=3.11"
+dependencies = [
+  "pysam>=0.23.3,<0.24",
+  "parasail>=1.3.4,<2",
+  "tqdm>=4.66,<5",
+]
+
+[project.scripts]
+nandomer = "nandomer.cli:main_help"
+nandomer_call = "nandomer.cli:main_call"
+nandomer_substitute = "nandomer.cli:main_substitute"
+nandomer_doctor = "nandomer.cli:main_doctor"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
