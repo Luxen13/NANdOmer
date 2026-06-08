@@ -27,7 +27,7 @@ First you need to clone this github repository to your desired destination.
 
 ```bash
 git clone https://github.com/Luxen13/NANdOmer.git
-cd NANDOmer
+cd NANdOmer
 ```
 
 Using an isolated environment is recommended to avoid dependency conflicts.
