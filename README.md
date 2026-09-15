@@ -1,4 +1,4 @@
-# NANdOmer
+# NANdOmer V1.0.0
 
 Nandomere is a command-line tool for preparing direct RNA nanopore sequencing reads from randomer-containing constructs for modified-base model training.
 
